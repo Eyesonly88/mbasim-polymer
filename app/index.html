@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mido Basim</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:vulcanized elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endbuild-->
+</head>
+
+<body unresolved>
+
+  <my-card layout vertical center-justified center>
+      <img src="images/new_dp2.png">
+      <h2>Mido Basim</h2>
+      <div id="card-content">
+        <p>I'm a Software Engineer working at <a class="orion-health" href="http://www.orionhealth.com" target="_blank">
+          Orion Health
+        </a>.
+        In my spare time, I created a video game called
+        <a class="spectrum" href="http://spectrumgame.com" target="_blank">
+          Spectrum
+        </a>.
+        </p>
+        <p>I like Football, playing games and riding my motorbike. </p>
+      </div>
+      <paper-button id="contact-button" raised onclick="window.open('http://nz.linkedin.com/pub/mohammed-abu-alsaad/16/867/461/', '_blank');">
+        <core-icon icon="assignment" class="contact-icon"></core-icon>
+        Résumé
+      </paper-button>
+    </my-card>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>

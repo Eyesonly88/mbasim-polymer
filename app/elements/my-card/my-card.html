@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-icon-button/core-icon-button.html">
+<link rel="import" href="../../bower_components/core-tooltip/core-tooltip.html">
+
+<polymer-element name="my-card" noscript>
+  <template>
+    <link rel="stylesheet" href="my-card.css">
+    <div class="card-header" horizontal center layout>
+      <content select="img"></content>
+      <content select="h2"></content>
+    </div>
+    <div class="card-body" horizontal center-justified center layout>
+      <content select="#card-content">
+      </content>
+    </div>
+    <div class="card-footer">
+      <core-tooltip class="fancy" position="bottom" noarrow>
+      <content select="#contact-button"></content>
+      <div tip>
+        <div>
+          <img style="border-radius:1em" src="../../images/resume.png"/>
+        </div>
+      </div>
+      </core-tooltip>
+    </div>
+  </template>
+</polymer-element>
